@@ -1,0 +1,101 @@
+/* GENERAL */
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+.psuedo_container {
+  width: 80% !important;
+  margin:auto;
+}
+
+/* HEADER */
+header {
+  position:sticky;
+  top:0;
+}
+.shop_cart img:hover {
+  width:40px;
+}
+
+/* MAIN */
+
+/* hero */
+#hero {
+  margin-top:100px;
+}
+
+.main-title {
+  margin-top:180px;
+  font-size: 44px;
+	font-weight: 500;
+  background: linear-gradient(to right, #494964, #6f6f89);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main_description {
+    margin-top: 5px;
+  	font-size: 22px;
+  	color: #585772 !important;
+}
+
+.laptop {
+  filter: drop-shadow(0px 5px 3px black);
+  animation: drop 1.5s ease;
+}
+
+.big-blob {
+  position:absolute;
+  top:0px;
+  right:0px;
+  z-index: -1;
+  opacity:0.5;
+  height:870px;
+}
+
+.medium-blob {
+  position:absolute;
+  height:400px;
+  bottom:0px;
+  left:400px;
+  z-index:-1;
+  opacity:0.5;
+}
+
+.small-blob {
+  position:absolute;
+  height:200px;
+  top:100px;
+  left:100px;
+  z-index:-1;
+  opacity:0.5;
+}
+
+@keyframes drop {
+  0% {
+    opacity:0;
+    transform: translateY(-80px);
+  }
+
+  100% {
+    opacity:1;
+    transform:translateY(0px);
+  }
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 576px){
+  /* service section */
+
+  .medium-blob {
+    display:none;
+  }
+
+  .small-blob {
+    display:none;
+  }
+
+}
